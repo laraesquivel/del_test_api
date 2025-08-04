@@ -2271,7 +2271,8 @@ app.get("/produtos", (req, res) => {
         "vendidomes": null,
         "dtultcomp": "07/28/2025 00:00:00"
     }
-])});
+].slice(0,30)
+)});
 
 app.listen(PORT, () => {
   console.log(`🚀 API rodando em http://localhost:${PORT}/produtos`);
